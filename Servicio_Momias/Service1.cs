@@ -102,7 +102,7 @@ namespace Servicio_Momias
                 }
 
                 //  comparamos la fecha actual contra la fecha del turno
-                if (Dtime_Fecha_Turno.ToString("dd/MM/yyyy") != DateTime.Now.ToString("dd/MM/yyyy"))
+                if (Dtime_Fecha_Turno.Date != DateTime.Now.Date)
                 {
                     //  si es distinta se procedara a cerrar el turno
                     Rs_Turno.P_Fecha_Hora_Cierre = DateTime.Now;
